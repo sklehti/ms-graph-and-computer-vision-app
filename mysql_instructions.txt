@@ -1,0 +1,28 @@
+/* 
+
+Instructions for using the database:
+
+1. Installing and started the use of mySQL first: https://dev.mysql.com/doc/mysql-getting-started/en/
+2. Log in to mySQL.
+3. Add the content below to the command line.
+
+*/
+
+CREATE DATABASE your_own_app;
+
+USE your_own_app;
+
+CREATE TABLE forms
+    (
+    id INT unsigned NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(50),
+    `doc` JSON,
+    `operation` VARCHAR(15),
+    `fields` SMALLINT,
+    PRIMARY KEY (id)
+    );
+
+
+
+
+

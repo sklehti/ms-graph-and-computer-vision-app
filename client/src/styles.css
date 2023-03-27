@@ -1,0 +1,369 @@
+.arrow-style {
+  position: fixed;
+  right: 2%;
+  bottom: 10px;
+  border-radius: 30px;
+  background-color: #fff;
+  border-width: 2px;
+  z-index: 1500;
+  fill: #3f00ff;
+}
+
+.arrow-style:hover {
+  fill: #1434a4;
+}
+
+.button-7 {
+  background-color: #3f00ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  /* box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset; */
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  margin-right: 3px;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #1434a4;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.button-7:active {
+  background-color: #3f00ff;
+  /* box-shadow: none; */
+}
+
+.button-8 {
+  background-color: #696969;
+  border-radius: 3px;
+  border: 1px solid #a9a9a9;
+  /* box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset; */
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  margin-right: 10px;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #a9a9a9;
+}
+
+.button-8:active {
+  background-color: #a9a9a9;
+}
+
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #3f00ff;
+  box-sizing: border-box;
+  color: #3f00ff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #3f00ff;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  width: 250px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:hover {
+  border-color: #1434a4;
+  color: #1434a4;
+  fill: #1434a4;
+}
+
+.button-59:active {
+  border-color: #1434a4;
+  color: #1434a4;
+  fill: #1434a4;
+}
+
+@media (max-width: 470px) {
+  .button-59 {
+    font-size: 13px;
+    min-width: 200px;
+  }
+  .button-7 {
+    font-size: 11px;
+  }
+
+  .button-8 {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 350px) {
+  .button-59 {
+    font-size: 12px;
+    min-width: 160px;
+    padding: 0px;
+  }
+  .button-7 {
+    font-size: 10px;
+    padding: 6px 0.4em;
+  }
+
+  .button-8 {
+    font-size: 10px;
+    padding: 6px 0.4em;
+  }
+}
+
+.button-70 {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin: 2px;
+}
+
+.button-70:hover {
+  background-color: #f7fafa;
+}
+
+.button-70:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.checkbox {
+  border: none;
+}
+
+.footer-style {
+  margin-top: 70px;
+  background-color: #3f00ff;
+  color: #fff;
+}
+
+.form-change-button {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #fbfbfb;
+}
+
+.form-row-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-table-checkbox {
+  margin-left: 5px;
+  height: 17px;
+  width: 17px;
+}
+
+.form-table-input {
+  margin-left: 5px;
+  border: none;
+  border-bottom: 1px solid #3f00ff;
+  background-color: #d9f1fb;
+}
+
+.form-table-number {
+  margin-left: 5px;
+  border: none;
+  border-bottom: 1px solid #3f00ff;
+  background-color: #d9f1fb;
+  width: 50px;
+}
+
+.form-table-number::-webkit-inner-spin-button,
+.form-table-number::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.form-table-style {
+  background-color: #d9f1fb;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-text-style {
+  border: none;
+  background-color: #fbfbfb;
+}
+
+.form-title-input {
+  border-radius: 5px;
+  margin-left: 10px;
+  border-width: 1px;
+  padding: 10px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.form-title-label {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: large;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+mgt-login {
+  --font-size: 0px;
+  --padding: 5px 0px 5px 5px;
+  --button-color--hover: #89cff0;
+  --button-background-color--hover: #89cff0;
+  --popup-command-font-size: 12px;
+  --popup-color: #201f1e;
+  --cursor: pointer;
+}
+
+.login-button-style {
+  background-color: #fbfbfb;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .login-button-style {
+    background-color: #3f00ff;
+    margin-left: -8px;
+  }
+
+  mgt-login {
+    --font-size: 10px;
+    --button-color: rgb(255, 255, 255);
+  }
+}
+
+.main-container-style {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.navbar-style {
+  background-color: #3f00ff;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #89cff0;
+}
+
+.navbar-nav .nav-link.active {
+  color: #80cbc4;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+a.title-style.navbar-brand {
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+a.title-style.navbar-brand:hover {
+  color: #89cff0;
+}
+
+a.title-style.navbar-brand:active {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 350px) {
+  a.title-style.navbar-brand {
+    font-size: 22px;
+    padding-right: 0px;
+  }
+}
