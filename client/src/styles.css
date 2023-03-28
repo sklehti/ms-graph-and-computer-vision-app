@@ -6,7 +6,7 @@
   background-color: #fff;
   border-width: 2px;
   z-index: 1500;
-  fill: #3f00ff;
+  fill: #4d4dff;
 }
 
 .arrow-style:hover {
@@ -14,7 +14,7 @@
 }
 
 .button-7 {
-  background-color: #3f00ff;
+  background-color: #0d6efd;
   border: 1px solid transparent;
   border-radius: 3px;
   /* box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset; */
@@ -43,7 +43,7 @@
 
 .button-7:hover,
 .button-7:focus {
-  background-color: #1434a4;
+  background-color: #0b5ed7;
 }
 
 .button-7:focus {
@@ -51,7 +51,7 @@
 }
 
 .button-7:active {
-  background-color: #3f00ff;
+  background-color: #0b5ed7;
   /* box-shadow: none; */
 }
 
@@ -85,22 +85,22 @@
 
 .button-8:hover,
 .button-8:focus {
-  background-color: #a9a9a9;
+  background-color: #535252;
 }
 
 .button-8:active {
-  background-color: #a9a9a9;
+  background-color: #535252;
 }
 
 .button-59 {
   align-items: center;
   background-color: #fff;
-  border: 2px solid #3f00ff;
+  border: 2px solid #4d4dff;
   box-sizing: border-box;
-  color: #3f00ff;
+  color: #4d4dff;
   cursor: pointer;
   display: inline-flex;
-  fill: #3f00ff;
+  fill: #4d4dff;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
     -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-size: 16px;
@@ -200,8 +200,8 @@
 }
 
 .footer-style {
-  margin-top: 70px;
-  background-color: #3f00ff;
+  margin-top: 120px;
+  background-color: #4d4dff;
   color: #fff;
 }
 
@@ -231,15 +231,15 @@
 .form-table-input {
   margin-left: 5px;
   border: none;
-  border-bottom: 1px solid #3f00ff;
-  background-color: #d9f1fb;
+  border-bottom: 1px solid #4d4dff;
+  background-color: #f0f8ff;
 }
 
 .form-table-number {
   margin-left: 5px;
   border: none;
-  border-bottom: 1px solid #3f00ff;
-  background-color: #d9f1fb;
+  border-bottom: 1px solid #4d4dff;
+  background-color: #f0f8ff;
   width: 50px;
 }
 
@@ -249,7 +249,7 @@
 }
 
 .form-table-style {
-  background-color: #d9f1fb;
+  background-color: #f0f8ff;
   text-align: left;
   padding: 10px;
   border-radius: 10px;
@@ -301,7 +301,7 @@ mgt-login {
 
 @media screen and (max-width: 767px) {
   .login-button-style {
-    background-color: #3f00ff;
+    background-color: #4d4dff;
     margin-left: -8px;
   }
 
@@ -318,7 +318,7 @@ mgt-login {
 }
 
 .navbar-style {
-  background-color: #3f00ff;
+  background-color: #4d4dff;
 }
 
 .navbar-nav .nav-link {

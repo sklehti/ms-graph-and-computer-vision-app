@@ -54,7 +54,7 @@ function Navigation() {
       <Navbar collapseOnSelect expand="md" className="navbar-style">
         <Container>
           <Navbar.Brand id="top" className="title-style" href="#home">
-            Hyvinvointi-sovellus
+            Testi-sovellus
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

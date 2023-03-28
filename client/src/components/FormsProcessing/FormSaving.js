@@ -24,6 +24,7 @@ function FormSaving({ setFolderInfo, selectedForm, setSelectedForm }) {
       let userDetails = await graphClient.api("/me").get();
       setUserInfo(userDetails);
 
+      // TODO: Check if the following rows are needed
       const children = await graphClient.api("/me/drive/root/children").get();
       let rightFolder = children.value.filter((file) => file.name === "okyky");
 
