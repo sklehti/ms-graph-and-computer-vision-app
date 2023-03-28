@@ -25,9 +25,7 @@ function FormSaving({ setFolderInfo, selectedForm, setSelectedForm }) {
       setUserInfo(userDetails);
 
       const children = await graphClient.api("/me/drive/root/children").get();
-      let rightFolder = children.value.filter(
-        (file) => file.name === "Sovellukset"
-      );
+      let rightFolder = children.value.filter((file) => file.name === "okyky");
 
       if (rightFolder.length > 0) {
         setFolderInfo(rightFolder[0].webUrl);
