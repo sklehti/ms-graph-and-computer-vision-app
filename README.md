@@ -1,6 +1,6 @@
 # ms-graph-and-computer-vision-app
 
-![Video presentation:](tallenne.mp4)
+![Video presentation](tallenne.mov "Video presentation")
 
 # To run locally
 
