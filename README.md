@@ -1,6 +1,6 @@
 # ms-graph-and-computer-vision-app
 
-https://user-images.githubusercontent.com/53122795/229558180-4a537880-d3f0-44ac-b1bf-9ce4e819eb20.mp4
+https://user-images.githubusercontent.com/53122795/234043632-c8d24a81-cbd9-46a7-979f-65ffbf8b4904.mp4
 
 # To run locally
 
@@ -44,6 +44,10 @@ COMPUTER_VISION_ENDPOINT=ADD_YOUR_OWN_ENDPOINT
 - `npm i`
 - `npm start`
 - Open the app on http://localhost:3000/
+
+
+
+
 
 
 
