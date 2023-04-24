@@ -1,6 +1,6 @@
 # ms-graph-and-computer-vision-app
 
-https://user-images.githubusercontent.com/53122795/234043632-c8d24a81-cbd9-46a7-979f-65ffbf8b4904.mp4
+https://user-images.githubusercontent.com/53122795/234044765-e33f69be-4392-45ad-ad21-6d1f79c70717.mp4
 
 # To run locally
 
