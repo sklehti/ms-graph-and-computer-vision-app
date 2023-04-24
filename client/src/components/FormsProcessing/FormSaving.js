@@ -71,46 +71,32 @@ function FormSaving({ setFolderInfo, selectedForm, setSelectedForm }) {
     let sumText = "Lomake: " + selectedForm.name + "\n";
     let fullText = "";
     let valuesSum = 0;
+    let allPoints = 0;
 
     // Adds up numeric values
-    if (selectedForm.operation === "sum") {
-      selectedForm.doc.map((n, index) => {
-        if (n.format === "number") {
-          if (n.value.length < 1) {
-            // TODO: Use e.g. the boostrap or formik form and their error handling!
-            console.log("Täytä kaikki kentät!");
-          }
+    selectedForm.doc.map((n, index) => {
+      if (n.format === "number") {
+        if (n.value.length < 1) {
+          alert("Täytä kaikki kentät!");
+        }
 
-          sum += Number(n.value);
-        }
-        if (n.format === "sum") {
-          sumText += n.row + " " + sum + "\n";
-          fullText = fullText + n.row + " " + sum + "\n";
-        } else {
-          fullText = fullText + n.row + " " + n.value + "\n";
-          if (
-            (n.value.length > 0 && !Array.isArray(n.value)) ||
-            (n.value.length === 1 && Array.isArray(n.value))
-            // n.value.length > 0
-          ) {
-            valuesSum += 1;
-          }
-        }
-      });
-    } else {
-      selectedForm.doc.map((t) => {
-        fullText = fullText + t.row + " " + t.value + "\n";
+        sum += Number(n.value);
+        allPoints += Number(n.max);
+      }
+      if (n.format === "sum") {
+        sumText += n.row + " " + sum + "/" + allPoints + "\n";
+        fullText = fullText + n.row + " " + sum + "/" + allPoints + "\n";
+      } else {
+        fullText = fullText + n.row + " " + n.value + "\n";
+
         if (
-          (t.value.length > 0 && !Array.isArray(t.value)) ||
-          (t.value.length === 1 && Array.isArray(t.value))
-          // t.value.length > 0
+          (n.value.length > 0 && !Array.isArray(n.value)) ||
+          (n.value.length === 1 && Array.isArray(n.value))
         ) {
           valuesSum += 1;
         }
-      });
-    }
-
-    console.log(valuesSum, " and ", selectedForm.fields);
+      }
+    });
 
     if (Number(valuesSum) === Number(selectedForm.fields)) {
       let provider = Providers.globalProvider;
@@ -146,7 +132,6 @@ function FormSaving({ setFolderInfo, selectedForm, setSelectedForm }) {
 
         // Update summary file
         let summaryForm = await graphClient
-          // .api(`me/drive/special/approot/children/tilasto.txt/content`)
           .api(`/me/drive/root:/okyky/tilasto.txt:/content`)
           .middlewareOptions(
             prepScopes("APIConnectors.Read.All", "APIConnectors.ReadWrite.All")

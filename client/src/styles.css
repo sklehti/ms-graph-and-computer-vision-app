@@ -1,6 +1,11 @@
+.all-action-buttons-style {
+  text-align: center;
+  margin: 10px;
+}
+
 .arrow-style {
   position: fixed;
-  right: 2%;
+  right: 10px;
   bottom: 10px;
   border-radius: 30px;
   background-color: #fff;
@@ -11,6 +16,11 @@
 
 .arrow-style:hover {
   fill: #1434a4;
+}
+
+.btn-group,
+.btn-group-vertical {
+  display: inline;
 }
 
 .button-7 {
@@ -292,6 +302,27 @@ mgt-login {
   --popup-command-font-size: 12px;
   --popup-color: #201f1e;
   --cursor: pointer;
+}
+
+.line-style {
+  background: transparent;
+  border: none !important;
+}
+
+.line-style:hover {
+  background-color: lightgrey;
+}
+
+.line-style-2 {
+  opacity: 0;
+  border: none;
+}
+
+.line-style-2:hover {
+  opacity: 1;
+  border: none !important;
+  background-color: lightgrey;
+  color: darkgrey;
 }
 
 .login-button-style {

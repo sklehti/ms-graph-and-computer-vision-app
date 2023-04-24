@@ -1,10 +1,10 @@
 import React from "react";
 
-function ButtonThree({
+function Totalpoints({
+  line,
   index,
   formOriginalText,
   setFormOriginalText,
-  numberSum,
   setNumbersSum,
 }) {
   const handleNumbersSum = (e) => {
@@ -30,16 +30,11 @@ function ButtonThree({
   };
   return (
     <>
-      <button
-        className="button-70"
-        id={index}
-        style={{ marginRight: "6px" }}
-        onClick={handleNumbersSum}
-      >
-        Laske pisteet
+      <button className="line-style" id={index} onClick={handleNumbersSum}>
+        {line}
       </button>
     </>
   );
 }
 
-export default ButtonThree;
+export default Totalpoints;
