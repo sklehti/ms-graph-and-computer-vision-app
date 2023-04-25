@@ -32,6 +32,15 @@ COMPUTER_VISION_ENDPOINT=ADD_YOUR_OWN_ENDPOINT
 
 ### Deploy MySQL database:
 
+- Add your mySQL database information to the .env file created in the server folder:
+
+```
+PASSWORD=ADD_YOUR_PASWORD
+DATABASE=ADD_YOUR_OWN_MYSQL_APP_NAME
+DB_HOST=ADD_YOUR_HOST_NAME
+DB_USER=ADD_YOUR_USER_NAME
+```
+
 - Follow the instructions in the mysql_instructions.txt file
 
 ### Start the app
@@ -44,11 +53,3 @@ COMPUTER_VISION_ENDPOINT=ADD_YOUR_OWN_ENDPOINT
 - `npm i`
 - `npm start`
 - Open the app on http://localhost:3000/
-
-
-
-
-
-
-
-
