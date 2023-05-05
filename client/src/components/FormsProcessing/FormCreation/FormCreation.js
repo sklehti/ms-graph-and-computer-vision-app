@@ -4,14 +4,7 @@ import SelectFieldModal from "../../modals/SelectFieldModal";
 import TextChanging from "./TextChanging";
 import FormChanging from "./FormChanging";
 import AllActionButtons from "./AllActionButtons";
-import LineAddition from "./LineChanges/LineAddition";
-import InputfieldAddition from "./LineChanges/InputfieldAddition";
-import LineDeleting from "./LineChanges/LineDeleting";
-import NumberFieldAddition from "./LineChanges/NumberFieldAddition";
-import CheckboxFieldAddition from "./LineChanges/CheckboxFieldAddition";
-import SelectFieldAddition from "./LineChanges/SelectFieldAddition";
-import Totalpoints from "./LineChanges/Totalpoints";
-import LineModification from "./LineChanges/ LineModification";
+import FieldAddition from "./FieldAddition";
 
 function FormCreation({
   setFileName,
@@ -30,11 +23,9 @@ function FormCreation({
   const [showSelectModal, setShowSelectModal] = useState(false);
   const [selectFields, setSelectFields] = useState([]);
   const [numberInputIndex, setNumberInputIndex] = useState(-1);
-
   const [minNumber, setMinNumber] = useState(null);
   const [maxNumber, setMaxNumber] = useState(null);
-
-  const [chooseAction, setChooseAction] = useState("");
+  const [chooseAction, setChooseAction] = useState("Muokkaa");
 
   const handleFileName = (e) => {
     setFileName(e.target.value);
@@ -65,71 +56,19 @@ function FormCreation({
             <div className="form-table-style">
               {formOriginalText.map((t, index) => (
                 <div key={index}>
-                  {chooseAction === "Muokkaa" ? (
-                    <LineModification
-                      line={t.row}
-                      setFormIndex={setFormIndex}
-                      index={index}
-                    />
-                  ) : chooseAction === "Rivi" ? (
-                    <LineAddition
-                      line={t.row}
-                      index={index}
-                      formOriginalText={formOriginalText}
-                      setFormOriginalText={setFormOriginalText}
-                      setFormIndex={setFormIndex}
-                    />
-                  ) : chooseAction === "Poista" ? (
-                    <LineDeleting
-                      lineInfo={t}
-                      index={index}
-                      formOriginalText={formOriginalText}
-                      setFormOriginalText={setFormOriginalText}
-                      setFormIndex={setFormIndex}
-                    />
-                  ) : chooseAction === "Tekstikenttä" ? (
-                    <InputfieldAddition
-                      line={t.row}
-                      index={index}
-                      formOriginalText={formOriginalText}
-                      setFormOriginalText={setFormOriginalText}
-                    />
-                  ) : chooseAction === "Numerokenttä" ? (
-                    <NumberFieldAddition
-                      line={t.row}
-                      index={index}
-                      setNumberInputIndex={setNumberInputIndex}
-                      formOriginalText={formOriginalText}
-                      setFormOriginalText={setFormOriginalText}
-                      setShowNumberModal={setShowNumberModal}
-                    />
-                  ) : chooseAction === "Ruutukenttä" ? (
-                    <CheckboxFieldAddition
-                      line={t.row}
-                      index={index}
-                      formOriginalText={formOriginalText}
-                      setFormOriginalText={setFormOriginalText}
-                    />
-                  ) : chooseAction === "Valikkokenttä" ? (
-                    <SelectFieldAddition
-                      line={t.row}
-                      index={index}
-                      setNumberInputIndex={setNumberInputIndex}
-                      formOriginalText={formOriginalText}
-                      setFormOriginalText={setFormOriginalText}
-                      setShowSelectModal={setShowSelectModal}
-                    />
-                  ) : chooseAction === "Pisteet" ? (
-                    <Totalpoints
-                      line={t.row}
-                      index={index}
-                      formOriginalText={formOriginalText}
-                      setFormOriginalText={setFormOriginalText}
-                      setNumbersSum={setNumbersSum}
-                    />
-                  ) : (
-                    <> {t.row}</>
-                  )}
+                  <FieldAddition
+                    fieldType={chooseAction}
+                    line={t.row}
+                    index={index}
+                    formOriginalText={formOriginalText}
+                    setFormOriginalText={setFormOriginalText}
+                    setFormIndex={setFormIndex}
+                    formIndex={formIndex}
+                    setNumberInputIndex={setNumberInputIndex}
+                    setShowNumberModal={setShowNumberModal}
+                    setShowSelectModal={setShowSelectModal}
+                    setNumbersSum={setNumbersSum}
+                  />
 
                   {Number(index) === Number(formIndex) ? (
                     <TextChanging
