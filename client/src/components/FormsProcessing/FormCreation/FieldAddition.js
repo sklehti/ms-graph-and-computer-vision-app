@@ -94,7 +94,7 @@ function FieldAddition({
         break;
 
       case "Pisteet":
-        // TODO: tämä voisi toimia täysin samalla funktiolla kuin ylhäällä, testaa!!
+        // this could work with exactly the same function as above, test
         formOriginalText.forEach((element, index) => {
           if (index === Number(e.target.id)) {
             newArray_2 = [
